@@ -1,0 +1,12 @@
+{
+  "name": "Roblox-MCP",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+  "postStartCommand": "bash .devcontainer/start.sh",
+  "forwardPorts": [16384],
+  "portsAttributes": {
+    "16384": { "label": "Roblox-MCP Bridge", "visibility": "public", "onAutoForward": "notify" }
+  },
+  "customizations": { "vscode": { "settings": { "terminal.integrated.defaultProfile.linux": "bash" } } },
+  "hostRequirements": { "cpus": 2, "memory": "4gb", "storage": "16gb" }
+}

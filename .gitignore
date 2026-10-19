@@ -15,3 +15,8 @@ node_modules/*
 
 # macOS
 .DS_Store
+
+# Runtime logs & pid
+logs/
+*.pid
+connector.luau.bak
